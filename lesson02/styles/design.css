@@ -9,7 +9,7 @@ footer {
     margin: 0 auto;
 }
 
-marquee {
+.banner {
     padding: 1rem;
     background-color: #eee;
 }
@@ -20,6 +20,7 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 h2 {
@@ -42,4 +43,9 @@ footer {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     font-size: smaller;
     text-align: right;
+}
+
+main h2 {
+    grid-column: 1 / -1;
+    text-align: left;
 }
