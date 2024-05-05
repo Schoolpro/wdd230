@@ -7,6 +7,16 @@ body {
     box-sizing: border-box;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns */
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
 
 
 section {
@@ -33,9 +43,9 @@ header {
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: #9cb4e7;
+    color: rgb(0, 0, 0);
+    text-align: right;
     padding: 1rem 0;
 
     max-width: 640px;
