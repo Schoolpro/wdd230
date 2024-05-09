@@ -1,6 +1,5 @@
 body {
     font-family: 'Arial', sans-serif;
-    /* Review font later */
     color: #333;
     background-color: #f4f4f4;
     margin: 0;
@@ -13,20 +12,83 @@ main,
 footer {
     text-align: center;
     padding: 20px;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #0000FF;
+
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+nav a:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+
+}
+
+main,
+footer {
+    text-align: center;
+    padding: 20px;
 }
 
 main {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
+
 }
 
 .card {
+    max-width: 100%;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
 }
 
-nav a {
-    margin-right: 10px;
+
+
+
+@media (min-width: 992px) {
+    nav {
+        flex-direction: row;
+        /* Cuando cambia al seize de la pagina, cambia a row */
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+    nav a {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
+    }
+
+
 }
