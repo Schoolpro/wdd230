@@ -8,10 +8,34 @@
         padding: 0;
         justify-content: center;
 
+        align-items: center;
+
+
+
     }
 
     header {
-        justify-content: center;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px 0;
+        /* 20px top and bottom, 0 left and right */
+        max-width: 800px;
+        /* Ensures max width is consistent */
+        margin: 0 auto;
+        /* Centers the card */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img {
+        /* nothing yet*/
+    }
+
+    header h1 {
+        margin: 0;
+        padding-left: 30%;
     }
 
     nav,

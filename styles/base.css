@@ -4,6 +4,9 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 header,
@@ -12,18 +15,36 @@ main,
 footer {
     text-align: center;
     padding: 20px;
-    /*display: flex;*/
-    flex-direction: column;
     align-items: center;
-}
-
-img {
-
-    height: auto;
-    display: block;
     margin: 0 auto;
-
+    /* Ensures center alignment */
 }
+
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px 0;
+    /* 20px top and bottom, 0 left and right */
+    max-width: 800px;
+    /* Ensures max width is consistent */
+    margin: 0 auto;
+    /* Centers the card */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    /* nothing yet*/
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 30%;
+}
+
+
 
 nav {
     display: flex;
@@ -35,50 +56,41 @@ nav {
 
 nav a {
     color: #0000FF;
-
     text-decoration: none;
     margin-right: 10px;
     margin-bottom: 10px;
-
 }
 
 nav a:last-child {
     margin-right: 0;
     margin-bottom: 0;
-
 }
 
 main,
 footer {
-    text-align: center;
+    max-width: 800px;
+    /* Ensures max width is the same as .card */
     padding: 20px;
-}
-
-main {
-    max-width: 1200px;
     margin: 0 auto;
-
+    /* Centers main and footer */
 }
 
 .card {
-    max-width: 100%;
     background: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 20px;
+    max-width: 800px;
+    /* Ensures max width is consistent */
+    margin: 0 auto;
+    /* Centers the card */
 }
-
-
-
 
 @media (min-width: 992px) {
     nav {
         flex-direction: row;
-        /* Cuando cambia al seize de la pagina, cambia a row */
         justify-content: center;
-
         align-items: center;
-
     }
 
     nav a {
@@ -89,6 +101,4 @@ main {
     nav a:last-child {
         margin-right: 0;
     }
-
-
 }
