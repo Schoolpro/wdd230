@@ -24,6 +24,9 @@ button.addEventListener('click', () => {
 
         deleteButton.addEventListener('click', () => {
             list.removeChild(li);
+
+            chapterCount--; // Decrement the chapter count
+            counter.textContent = `Chapters added: ${chapterCount}`; // Update the counter display
         });
 
         chapterCount++;
