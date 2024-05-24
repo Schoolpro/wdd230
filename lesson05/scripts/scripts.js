@@ -3,6 +3,9 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('#list');
 
+const counter = document.querySelector('#counter');
+let chapterCount = 0;
+
 
 button.addEventListener('click', () => {
     if (input.value !== '') {
@@ -23,8 +26,13 @@ button.addEventListener('click', () => {
             list.removeChild(li);
         });
 
+        chapterCount++;
+        counter.textContent = `Chapters added: ${chapterCount}`;
+
         input.value = '';
         input.focus();
+
+
     }
     else {
         alert('Please enter a chapter');
