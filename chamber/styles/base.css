@@ -192,6 +192,21 @@ section {
 }
 
 
+
+.dark-mode .navigation,
+.dark-mode .container,
+.dark-mode .container .card,
+.dark-mode .container .card h2 {
+    background-color: #000000;
+    color: #fff;
+}
+
+.dark-mode .navigation ul li a {
+    background-color: #000000;
+    color: #fff;
+}
+
+
 @media (max-width: 600px) {
     body {
         justify-content: center;

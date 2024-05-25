@@ -5,4 +5,6 @@ const main = document.querySelector("main");
 modeButton.addEventListener("click", () => {
     body.classList.toggle('dark-mode');
     main.classList.toggle('dark-mode');
+    nav.classList.toggle('dark-mode');
+    container.classList.toggle('dark-mode');
 });
