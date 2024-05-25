@@ -139,14 +139,7 @@ section {
     /* Added transition for smooth hover effect */
 }
 
-/*
-.card:hover {
-    transform: scale(1.01);
-    /* Slightly scale up the card */
-/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-/* Add a deeper shadow */
-/*
-}*/
+
 
 .current-events {
     grid-column: span 2;
