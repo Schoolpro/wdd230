@@ -135,7 +135,18 @@ section {
     border: 1px solid orangered;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
+    /* transition: transform 0.3s, box-shadow 0.3s;
+    /* Added transition for smooth hover effect */
 }
+
+/*
+.card:hover {
+    transform: scale(1.01);
+    /* Slightly scale up the card */
+/* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/* Add a deeper shadow */
+/*
+}*/
 
 .current-events {
     grid-column: span 2;
@@ -171,6 +182,22 @@ section {
     color: red;
 
 }
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
+
 
 @media (max-width: 600px) {
     body {
