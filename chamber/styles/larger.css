@@ -1,0 +1,57 @@
+@media screen and (min-width: 640px) {
+    header {
+        padding: 20px;
+    }
+
+    header img {
+        max-height: 100px;
+        width: auto;
+        border-radius: 10%;
+        margin-right: 20px;
+    }
+
+    nav {
+        padding: 10px 20px;
+    }
+
+    .navigation ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .button {
+        top: 50%;
+        left: 30px;
+        transform: translateY(-50%);
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .current-events {
+        grid-column: span 2;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+}

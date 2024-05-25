@@ -1,0 +1,54 @@
+@media screen and (max-width: 480px) {
+    .navigation {
+        display: none;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    header img {
+        width: 80px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    #menu {
+        display: block;
+        background-color: #fbf5ef;
+        border: none;
+        font-size: 1.5rem;
+        padding: 5px 0 5px 90%;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "✖️";
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .current-events {
+        grid-column: span 1;
+    }
+
+    .button {
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

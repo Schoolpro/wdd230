@@ -1,8 +1,27 @@
-body {
+:root {
+    --maincolor: #10273d;
+    --secondary: #f9efdd;
+    --accent1: #ffffff;
+    --accent2: #000000;
+}
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     padding: 0;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
+    width: 1200px;
+    justify-content: center;
+
+    display: grid;
+    grid-gap: 15px;
+    margin: auto;
+    font-size: large;
 }
 
 header {
@@ -13,7 +32,7 @@ header {
     background-color: #10273d;
     padding: 20px 20px;
     max-width: 100%;
-    margin: 0 auto;
+
 }
 
 header img {
@@ -25,13 +44,14 @@ header img {
     margin-left: -170px;
 }
 
+
 nav {
-    background-color: #dddddd;
+    background-color: #efefef;
     text-align: center;
     padding: 10px 20px;
     line-height: 2;
     max-width: 100%;
-    margin: 0 auto;
+
 }
 
 .navigation ul {
@@ -46,48 +66,63 @@ nav {
     margin-right: 10px;
 }
 
-nav a {
-    display: block;
-    color: #063753;
+.navigation a {
+    padding: 1rem;
+
     text-align: center;
-    padding: 0.5rem;
     text-decoration: none;
+    color: #000;
+}
+
+.navigation a:hover {
+    background-color: #D8D8D8;
+}
+
+.action {
+    background-color: #D8D8D8;
+
+    color: #000;
+
+}
+
+#mode {
     position: relative;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
 }
 
-
-
-h1,
-h2 {
-    font-family: Arial, Helvetica, sans-serif, serif;
-    color: #d65205;
-}
-
-h1 {
+body h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
     color: #FFFFFF;
+    background-color: #10273d;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
-h2 {
+body h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: #001c38;
 }
 
-p {
-    font-family: Arial, sans-serif;
-    color: #292929;
+main {
+    display: grid;
+    grid-gap: 5px;
 }
 
-.hero {
-    width: 100%;
-    overflow: hidden;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
+section {
+    text-align: center;
     display: block;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+
 }
-
-
 
 .container {
     display: grid;
@@ -98,7 +133,6 @@ p {
 
 .card {
     border: 1px solid orangered;
-
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
 }
@@ -106,6 +140,19 @@ p {
 .current-events {
     grid-column: span 2;
 }
+
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 1200px;
+    height: 350px;
+    display: block;
+}
+
 
 .footer {
     background-color: #001c38;
@@ -116,4 +163,44 @@ p {
 .footer p {
     color: #FFFFFF;
     margin: 5px 0;
+}
+
+
+.contact {
+    padding: 10px;
+    color: red;
+
+}
+
+@media (max-width: 600px) {
+    body {
+        justify-content: center;
+        grid-gap: 0;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        display: none;
+    }
+
+    .open a {
+        display: block;
+    }
+
+    #menu {
+        background-color: var(--accent1);
+        border: none;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "X";
+    }
 }
