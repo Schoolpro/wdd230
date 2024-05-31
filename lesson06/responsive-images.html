@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta property="og:title" content="Responsive Images Example">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/images/responsive-example.jpg">
+    <meta property="og:url" content="https://example.com/responsive-images.html">
+    <meta name="author" content="Alan Krebs">
+    <meta name="description" content="Using responsive images with the picture element">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Responsive Images Example</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 1000px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Description of the image" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Alan Krebs</p>
+    </footer>
+</body>
+
+</html>
