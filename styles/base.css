@@ -108,11 +108,11 @@ header picture {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* Ensure the picture takes full width of the container */
+
 }
 
 header h1 {
     text-align: center;
     width: 100%;
-    /* Ensure the h1 takes full width of the container */
+
 }
