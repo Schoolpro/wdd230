@@ -19,23 +19,21 @@
 </head>
 
 <body>
-    <div id="mode">
-        💡/🕶️
-    </div>
-
+    <div id="mode">💡/🕶️</div>
     <header>
-
         <h1>PG Chamber of Commerce Website</h1>
     </header>
     <div class="hero">
-        <img src="images/pleasant-grove-utah.jpg" alt="PG Night View">
+        <img src="images/wdd230-org-large.webp" alt="PG Night View"
+            srcset="images/wdd230-org-small.webp 480w, images/wdd230-org-medium.webp 800w, images/wdd230-org-large.webp 1200w"
+            sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px">
     </div>
     <button id="menu" aria-label="Menu"></button>
     <nav class="navigation">
         <ul>
-            <li><a href="#">Home </a></li>
-            <li><a href="#"> Discover </a></li>
-            <li><a href="#"> Directory </a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Discover</a></li>
+            <li><a href="#"> Directory</a></li>
             <li><a href="#"> Join</a></li>
         </ul>
     </nav>
@@ -43,46 +41,39 @@
         <div class="container">
             <div class="card current-events">
                 <h2>Current Events</h2>
-
             </div>
             <div class="card">
                 <h2>About Us</h2>
-
             </div>
             <div class="card">
                 <h2>Company 1 highlights</h2>
-
             </div>
             <div class="card">
                 <h2>Company 2 highlights</h2>
-
             </div>
             <div class="card">
                 <h2>Weather</h2>
-
+                <p>Temperature: <span id="temperature">45</span>°F</p>
+                <p>Wind Speed: <span id="windspeed">10</span> mph</p>
+                <p>Wind Chill: <span id="windchill">N/A</span></p>
             </div>
         </div>
     </main>
-    <a href="images/landscape.webp">WebP</a>
+    <a href="images/pleasant-grove-utah.webp">WebP</a>
     <footer>
         <div class="footer">
             <p>Contact Info</p>
             <p>Alan Krebs | WDD 230 - BYUI</p>
-
-
             <p>©
                 <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
             </p>
             <p id="lastModified"></p>
         </div>
     </footer>
-
-
     <script src="scripts/getdates.js"></script>
     <script src="scripts/mainmenu.js"></script>
     <script src="scripts/darkmode.js"></script>
-
-
+    <script src="scripts/windchill.js"></script>
 </body>
 
 </html>
