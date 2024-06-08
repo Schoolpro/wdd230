@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover PG Chamber of Commerce</title>
+    <meta property="og:title" content="Discover PG Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schoolpro.github.io/wdd230/chamber/images/pleasant-grove-utah">
+    <meta property="og:url" content="https://schoolpro.github.io/wdd230/chamber/discover.html">
+    <meta name="author" content="Alan Krebs">
+    <meta name="description" content="Discover the area with the PG Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div id="mode">💡/🕶️</div>
+    <header>
+        <h1>PG Chamber of Commerce Website</h1>
+    </header>
+    <div class="hero">
+        <img src="images/wdd230-org-large.webp" alt="PG Night View"
+            srcset="images/wdd230-org-small.webp 480w, images/wdd230-org-medium.webp 800w, images/wdd230-org-large.webp 1200w"
+            sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px">
+    </div>
+    <button id="menu" aria-label="Menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <h2>Welcome to PG Chamber of Commerce Web</h2>
+            <hr>
+            <p id="visit-message"></p>
+
+            <hr>
+
+            <h3>Demographics</h3>
+            <p>Pleasant Grove, known for its friendly community,
+                has a population of around 38,000 residents. The median
+                age is 31 years, with a diverse mix of families,
+                young professionals, and retirees.</p>
+            <p></p>
+
+            <h3>Statistical Data</h3>
+            <p>The median household income in Pleasant Grove is $80,000, and the unemployment rate is 3.5%. The city
+                boasts a high rate of home ownership at 72%.</p>
+
+            <h3>Events</h3>
+            <ul>
+                <li><strong>Strawberry Days Festival</strong>: June 16-19</li>
+                <li><strong>Summer Concert Series</strong>: Every Friday in July</li>
+                <li><strong>Farmers Market</strong>: Saturdays, May-October</li>
+            </ul>
+
+            <h3>Attractions</h3>
+            <ul>
+                <li><strong>Evermore Park</strong>: An immersive experience with live performances and themed
+                    adventures.</li>
+                <li><strong>Battle Creek Falls</strong>: A popular hiking destination with a beautiful waterfall.</li>
+                <li><strong>Discovery Park</strong>: A large playground and park, perfect for families.</li>
+            </ul>
+
+            <h3>Calendar</h3>
+            <p>Check out the local events happening this month:</p>
+            <ul>
+                <li>June 1: Community Clean-Up Day</li>
+                <li>June 8: Outdoor Movie Night</li>
+                <li>June 15: Art in the Park</li>
+                <li>June 22: Food Truck Roundup</li>
+                <li>June 29: Jazz in the Park</li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Local Photos</h2>
+            <div class="photo-gallery">
+                <img src="images/photo1.webp" alt="Local Photo 1" loading="lazy">
+                <img src="images/photo2.webp" alt="Local Photo 2" loading="lazy">
+                <img src="images/photo3.webp" alt="Local Photo 3" loading="lazy">
+                <img src="images/photo4.webp" alt="Local Photo 4" loading="lazy">
+                <img src="images/photo5.webp" alt="Local Photo 5" loading="lazy">
+                <img src="images/photo6.webp" alt="Local Photo 6" loading="lazy">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Contact Info</p>
+            <p>Alan Krebs | WDD 230 - BYUI</p>
+            <p>©
+                <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visit.js"></script>
+</body>
+
+</html>

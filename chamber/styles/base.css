@@ -15,9 +15,8 @@ body {
     padding: 0;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
-    width: 1200px;
+    width: 100%;
     justify-content: center;
-
     display: grid;
     grid-gap: 15px;
     margin: auto;
@@ -32,7 +31,6 @@ header {
     background-color: #10273d;
     padding: 20px 20px;
     max-width: 100%;
-
 }
 
 .hero img {
@@ -49,14 +47,12 @@ header img {
     margin-left: -170px;
 }
 
-
 nav {
     background-color: #efefef;
     text-align: center;
     padding: 10px 20px;
     line-height: 2;
     max-width: 100%;
-
 }
 
 .navigation ul {
@@ -73,7 +69,6 @@ nav {
 
 .navigation a {
     padding: 1rem;
-
     text-align: center;
     text-decoration: none;
     color: #000;
@@ -85,9 +80,7 @@ nav {
 
 .action {
     background-color: #D8D8D8;
-
     color: #000;
-
 }
 
 #mode {
@@ -118,7 +111,35 @@ body h2 {
 
 main {
     display: grid;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.main-content {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
 }
 
 section {
@@ -126,7 +147,6 @@ section {
     display: block;
     padding: 10px;
     background-color: rgb(255, 255, 255);
-
 }
 
 .container {
@@ -140,16 +160,11 @@ section {
     border: 1px solid orangered;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
-    /* transition: transform 0.3s, box-shadow 0.3s;
-    /* Added transition for smooth hover effect */
 }
-
-
 
 .current-events {
     grid-column: span 2;
 }
-
 
 .hero {
     width: 100%;
@@ -162,7 +177,6 @@ section {
     display: block;
 }
 
-
 .footer {
     background-color: #001c38;
     text-align: center;
@@ -174,11 +188,9 @@ section {
     margin: 5px 0;
 }
 
-
 .contact {
     padding: 10px;
     color: red;
-
 }
 
 #mode {
@@ -196,8 +208,6 @@ section {
     border-color: #eee;
 }
 
-
-
 .dark-mode .navigation,
 .dark-mode .container,
 .dark-mode .container .card,
@@ -210,7 +220,6 @@ section {
     background-color: #000000;
     color: #fff;
 }
-
 
 @media (max-width: 600px) {
     body {
@@ -242,5 +251,14 @@ section {
 
     #menu.open::before {
         content: "X";
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar,
+    .main-content {
+        padding: 10px;
     }
 }
