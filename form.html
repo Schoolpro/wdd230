@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Alan Krebs - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Form Page for WDD 230 Course Assignment - Alan Krebs">
+    <meta name="author" content="Alan Krebs">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+
+    <meta property="og:title" content="Form - Alan Krebs - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_389,q_65,w_601/v1/crm/utahvalley/pleasantgrove0_302e0d0d-5056-a36a-0bfae49bdd8d7736.jpg">
+    <meta property="og:url" content="https://schoolpro.github.io/wdd230/form.html">
+</head>
+
+<body>
+    <header>
+        <picture>
+            <source srcset="images/Alan-400px.webp" media="(max-width: 400px)">
+            <source srcset="images/Alan.webp" media="(min-width: 401px)">
+            <img src="images/Alan.webp" alt="Alan Krebs" width="110" height="147">
+        </picture>
+        <h1>Alan Krebs</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu" target="_blank">BYU-Idaho</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Form Page</h2>
+            <form id="user-form" action="record.html" method="get">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}"
+                    title="Password must be at least 8 characters long and alpha-numeric.">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required pattern="^[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    title="A valid byui.edu email address.">
+
+                <label for="rating">Page Rating:</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1"
+                    oninput="document.getElementById('rating-value').innerText = this.value;">
+                <span id="rating-value">5</span>
+
+                <button type="submit">Submit</button>
+            </form>
+            <div id="formmessage"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
