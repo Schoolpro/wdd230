@@ -17,6 +17,55 @@ body {
     background-color: var(--main-bg-color);
 }
 
+header,
+nav,
+main,
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px 0;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    /* nothing yet */
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 30%;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #0000FF;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
 main {
     margin: 20px auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -24,11 +73,24 @@ main {
     max-width: 500px;
 }
 
-header,
+header picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+}
+
 footer {
-    height: 30px;
-    background-color: #444;
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -125,5 +187,28 @@ input::placeholder {
 
     75% {
         transform: translateX(3px);
+    }
+}
+
+/* Media Queries for Responsive Navigation */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        margin-right: 10px;
+        margin-bottom: 0;
     }
 }
