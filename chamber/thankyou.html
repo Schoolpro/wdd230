@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Alan Krebs - WDD 230</title>
+    <meta property="og:title" content="Thank You for Your Submission">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schoolpro.github.io/wdd230/chamber/images/wdd230-org-large.webp">
+    <meta property="og:url" content="https://schoolpro.github.io/wdd230/chamber/thankyou.html">
+    <meta name="author" content="Alan Krebs">
+    <meta name="description" content="Thank you for submitting your application to join the Chamber of Commerce.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div id="mode">💡/🕶️</div>
+    <header>
+        <h1>PG Chamber of Commerce Website</h1>
+    </header>
+
+    <button id="menu" aria-label="Menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Discover</a></li>
+            <li><a href="#"> Directory</a></li>
+            <li><a href="#"> Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-container">
+            <section class="thankyou-message">
+                <h2>Thank You!</h2>
+                <p>Thank you for submitting your application to join the Chamber of Commerce. We will review your
+                    application and get back to you shortly.</p>
+                <p>If you have any questions, feel free to <a href="#">contact us</a>.</p>
+                <p><a href="index.html">Return to Home Page</a></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Contact Info</p>
+            <p>Alan Krebs | WDD 230 - BYUI</p>
+            <p>©
+                <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>

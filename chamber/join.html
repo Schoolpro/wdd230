@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Chamber - Alan Krebs - WDD 230</title>
+    <meta property="og:title" content="Join the Chamber of Commerce | Apply for Membership">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://schoolpro.github.io/wdd230/chamber/images/wdd230-org-large.webp">
+    <meta property="og:url" content="https://schoolpro.github.io/wdd230/chamber/join.html">
+    <meta name="author" content="Alan Krebs">
+    <meta name="description" content="Apply to join the Chamber of Commerce through our membership application form.">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <div id="mode">💡/🕶️</div>
+    <header>
+        <h1>PG Chamber of Commerce Website</h1>
+    </header>
+    <div class="hero">
+        <img src="images/wdd230-org-large.webp" alt="PG Night View"
+            srcset="images/wdd230-org-small.webp 480w, images/wdd230-org-medium.webp 800w, images/wdd230-org-large.webp 1200w"
+            sizes="(max-width: 480px) 480px, (max-width: 800px) 800px, 1200px">
+    </div>
+    <button id="menu" aria-label="Menu"></button>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#"> Discover</a></li>
+            <li><a href="#"> Directory</a></li>
+            <li><a href="#"> Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="main-container">
+            <div class="form-content-container">
+                <section class="form-container">
+                    <h2>Join the Chamber of Commerce</h2>
+                    <form id="membership-form" action="thankyou.html" method="get">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+
+                        <label for="title">Title/Position:</label>
+                        <input type="text" id="title" name="title" required pattern="[a-zA-Z\s-]{7,}"
+                            title="Only alphabets, hyphens, and spaces are allowed. Minimum 7 characters.">
+
+                        <label for="email">Contact Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+                        <label for="phone">Mobile Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="business-name">Business/Organization Name:</label>
+                        <input type="text" id="business-name" name="business-name" required>
+
+                        <label for="membership-level">Membership Level:</label>
+                        <select id="membership-level" name="membership-level">
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+
+                        <label for="business-description">Business/Organization Description:</label>
+                        <textarea id="business-description" name="business-description"></textarea>
+
+                        <input type="hidden" id="form-loaded" name="form-loaded">
+
+                        <button type="submit">Submit Application</button>
+                    </form>
+                    <div id="membership-benefits">
+                        <h3>Membership Benefits</h3>
+                        <p>NP Membership: No fee. Benefits include networking opportunities, community events, and more.
+                        </p>
+                        <p>Bronze Membership: Benefits include everything in NP plus advertising on our website.</p>
+                        <p>Silver Membership: Benefits include everything in Bronze plus discounted event tickets.</p>
+                        <p>Gold Membership: Benefits include everything in Silver plus premium advertising spots and VIP
+                            event access.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Contact Info</p>
+            <p>Alan Krebs | WDD 230 - BYUI</p>
+            <p>©
+                <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script>
+        document.getElementById('lastModified').textContent = "Last Modified: " + document.lastModified;
+        document.getElementById('form-loaded').value = Date.now();
+    </script>
+</body>
+
+</html>

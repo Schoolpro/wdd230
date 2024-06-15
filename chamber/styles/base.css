@@ -1,6 +1,6 @@
 :root {
     --maincolor: #10273d;
-    --secondary: #f9efdd;
+    --secondary: #d3d3d3;
     --accent1: #ffffff;
     --accent2: #000000;
 }
@@ -15,11 +15,9 @@ body {
     padding: 0;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    justify-content: center;
-    display: grid;
-    grid-gap: 15px;
-    margin: auto;
     font-size: large;
 }
 
@@ -30,12 +28,19 @@ header {
     color: #FFFFFF;
     background-color: #10273d;
     padding: 20px 20px;
-    max-width: 100%;
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    max-width: 1200px;
 }
 
 header img {
@@ -44,7 +49,6 @@ header img {
     width: 150px;
     border-radius: 10%;
     margin-right: 20px;
-    margin-left: -170px;
 }
 
 nav {
@@ -52,7 +56,7 @@ nav {
     text-align: center;
     padding: 10px 20px;
     line-height: 2;
-    max-width: 100%;
+    width: 100%;
 }
 
 .navigation ul {
@@ -110,10 +114,35 @@ body h2 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-gap: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     padding: 20px;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid orangered;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
+}
+
+.current-events {
+    grid-column: span 2;
 }
 
 .sidebar {
@@ -149,23 +178,6 @@ section {
     background-color: rgb(255, 255, 255);
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
-
-.card {
-    border: 1px solid orangered;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 255, 0.1);
-}
-
-.current-events {
-    grid-column: span 2;
-}
-
 .hero {
     width: 100%;
     overflow: hidden;
@@ -181,6 +193,10 @@ section {
     background-color: #001c38;
     text-align: center;
     padding: 20px;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 .footer p {
@@ -260,5 +276,97 @@ section {
     .sidebar,
     .main-content {
         padding: 10px;
+    }
+}
+
+
+.form-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--maincolor);
+}
+
+form input,
+form textarea,
+form select,
+form button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--maincolor);
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: var(--maincolor);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary);
+    color: var(--maincolor);
+}
+
+#membership-benefits {
+    background-color: var(--secondary);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#membership-benefits h3 {
+    margin-bottom: 10px;
+    color: var(--maincolor);
+}
+
+@media (min-width: 768px) {
+    .form-content-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    #membership-benefits {
+        width: 75%;
+        margin-left: 20px;
+
+    }
+
+    #membership-benefits p {
+        margin-bottom: 10px;
     }
 }
