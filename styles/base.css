@@ -116,3 +116,40 @@ header h1 {
     width: 100%;
 
 }
+
+/* Estilos para el contenedor de enlaces */
+#dynamic-links {
+    padding: 0;
+    list-style: none;
+}
+
+#dynamic-links li {
+    margin-bottom: 10px;
+}
+
+#dynamic-links h2 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#dynamic-links ul {
+    display: inline;
+    padding: 0;
+    list-style: none;
+}
+
+#dynamic-links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#dynamic-links a {
+    color: blue;
+    text-decoration: none;
+}
+
+#dynamic-links a:hover {
+    text-decoration: underline;
+}
