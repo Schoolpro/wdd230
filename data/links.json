@@ -1,0 +1,30 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "desing"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Activity 2"
+                }
+            ]
+        },
+        {
+            "lesson": "02",
+            "links": [
+                {
+                    "url": "lesson02/mediaquery.html",
+                    "title": "Media Queries"
+                },
+                {
+                    "url": "lesson02/design-principles.html",
+                    "title": "Design Principles Document"
+                }
+            ]
+        }
+    ]
+}
