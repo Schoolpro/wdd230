@@ -13,7 +13,7 @@
         "address": "456 Elm St, Pleasant Grove, UT",
         "phone": "801-555-5678",
         "website": "https://grovecafe.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Silver",
         "description": "Cozy cafe offering a variety of coffee and pastries."
     },
@@ -22,7 +22,7 @@
         "address": "789 Oak St, Pleasant Grove, UT",
         "phone": "801-555-8765",
         "website": "https://techinnovators.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Bronze",
         "description": "Innovative technology solutions for modern businesses."
     },
@@ -31,7 +31,7 @@
         "address": "321 Maple St, Pleasant Grove, UT",
         "phone": "801-555-4321",
         "website": "https://pgdental.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Gold",
         "description": "Committed to providing quality dental care."
     },
@@ -40,7 +40,7 @@
         "address": "654 Pine St, Pleasant Grove, UT",
         "phone": "801-555-3456",
         "website": "https://grovefitness.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Silver",
         "description": "Your trusted partner in health and fitness."
     },
@@ -49,7 +49,7 @@
         "address": "987 Birch St, Pleasant Grove, UT",
         "phone": "801-555-7890",
         "website": "https://pgbookstore.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Bronze",
         "description": "Excellence in customer service and a wide range of books."
     },
@@ -58,7 +58,7 @@
         "address": "123 Cedar St, Pleasant Grove, UT",
         "phone": "801-555-1111",
         "website": "https://grovegardens.com",
-        "image": "fotoloca.jpg",
+        "image": "fotoloca.jpeg",
         "membershipLevel": "Gold",
         "description": "Leading innovations in gardening and landscaping."
     }
