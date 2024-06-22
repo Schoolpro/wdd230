@@ -14,7 +14,6 @@ function showList() {
     display.classList.remove("grid");
 }
 
-// Fetch member data from JSON file and display it
 fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
