@@ -1,65 +1,65 @@
 [
     {
-        "name": "Company One",
-        "address": "123 Main St, Anytown, USA",
-        "phone": "123-456-7890",
-        "website": "https://companyone.com",
-        "image": "companyone.jpg",
+        "name": "Pleasant Grove Hardware",
+        "address": "123 Main St, Pleasant Grove, UT",
+        "phone": "801-555-1234",
+        "website": "https://pghardware.com",
+        "image": "pghardware.jpg",
         "membershipLevel": "Gold",
-        "description": "Leading provider of XYZ services."
+        "description": "Leading provider of hardware and home improvement products."
     },
     {
-        "name": "Company Two",
-        "address": "456 Elm St, Othertown, USA",
-        "phone": "987-654-3210",
-        "website": "https://companytwo.com",
-        "image": "companytwo.jpg",
+        "name": "Grove Cafe",
+        "address": "456 Elm St, Pleasant Grove, UT",
+        "phone": "801-555-5678",
+        "website": "https://grovecafe.com",
+        "image": "grovecafe.jpg",
         "membershipLevel": "Silver",
-        "description": "Expert in ABC solutions."
+        "description": "Cozy cafe offering a variety of coffee and pastries."
     },
     {
-        "name": "Company Three",
-        "address": "789 Oak St, Sometown, USA",
-        "phone": "555-555-5555",
-        "website": "https://companythree.com",
-        "image": "companythree.jpg",
+        "name": "Tech Innovators",
+        "address": "789 Oak St, Pleasant Grove, UT",
+        "phone": "801-555-8765",
+        "website": "https://techinnovators.com",
+        "image": "techinnovators.jpg",
         "membershipLevel": "Bronze",
-        "description": "Innovative technology for modern businesses."
+        "description": "Innovative technology solutions for modern businesses."
     },
     {
-        "name": "Company Four",
-        "address": "321 Maple St, Anothertown, USA",
-        "phone": "111-222-3333",
-        "website": "https://companyfour.com",
-        "image": "companyfour.jpg",
+        "name": "Pleasant Grove Dental",
+        "address": "321 Maple St, Pleasant Grove, UT",
+        "phone": "801-555-4321",
+        "website": "https://pgdental.com",
+        "image": "pgdental.jpg",
         "membershipLevel": "Gold",
-        "description": "Committed to delivering quality products."
+        "description": "Committed to providing quality dental care."
     },
     {
-        "name": "Company Five",
-        "address": "654 Pine St, Yetanothertown, USA",
-        "phone": "444-555-6666",
-        "website": "https://companyfive.com",
-        "image": "companyfive.jpg",
+        "name": "Grove Fitness",
+        "address": "654 Pine St, Pleasant Grove, UT",
+        "phone": "801-555-3456",
+        "website": "https://grovefitness.com",
+        "image": "grovefitness.jpg",
         "membershipLevel": "Silver",
-        "description": "Your trusted partner in business growth."
+        "description": "Your trusted partner in health and fitness."
     },
     {
-        "name": "Company Six",
-        "address": "987 Birch St, Differenttown, USA",
-        "phone": "777-888-9999",
-        "website": "https://companysix.com",
-        "image": "companysix.jpg",
+        "name": "Pleasant Grove Bookstore",
+        "address": "987 Birch St, Pleasant Grove, UT",
+        "phone": "801-555-7890",
+        "website": "https://pgbookstore.com",
+        "image": "pgbookstore.jpg",
         "membershipLevel": "Bronze",
-        "description": "Excellence in customer service and support."
+        "description": "Excellence in customer service and a wide range of books."
     },
     {
-        "name": "Company Seven",
-        "address": "123 Cedar St, Lasttown, USA",
-        "phone": "000-111-2222",
-        "website": "https://companyseven.com",
-        "image": "companyseven.jpg",
+        "name": "Grove Gardens",
+        "address": "123 Cedar St, Pleasant Grove, UT",
+        "phone": "801-555-1111",
+        "website": "https://grovegardens.com",
+        "image": "grovegardens.jpg",
         "membershipLevel": "Gold",
-        "description": "Leading innovations in the industry."
+        "description": "Leading innovations in gardening and landscaping."
     }
 ]

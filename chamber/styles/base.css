@@ -369,7 +369,7 @@ form button:hover {
     }
 }
 
-/* Added CSS for the directory page */
+
 .menu {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -446,7 +446,7 @@ article.list section>* {
 
 article.list section img {
     display: none;
-    /* smaller viewports only */
+
 }
 
 article.list section h3 {
