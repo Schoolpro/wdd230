@@ -4,7 +4,7 @@
         "address": "123 Main St, Pleasant Grove, UT",
         "phone": "801-555-1234",
         "website": "https://pghardware.com",
-        "image": "pghardware.jpg",
+        "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21",
         "membershipLevel": "Gold",
         "description": "Leading provider of hardware and home improvement products."
     },
