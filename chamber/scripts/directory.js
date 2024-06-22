@@ -14,6 +14,7 @@ function showList() {
     display.classList.remove("grid");
 }
 
+
 fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
