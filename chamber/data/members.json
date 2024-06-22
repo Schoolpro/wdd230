@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Company One",
+        "address": "123 Main St, Anytown, USA",
+        "phone": "123-456-7890",
+        "website": "https://companyone.com",
+        "image": "companyone.jpg",
+        "membershipLevel": "Gold",
+        "description": "Leading provider of XYZ services."
+    },
+    {
+        "name": "Company Two",
+        "address": "456 Elm St, Othertown, USA",
+        "phone": "987-654-3210",
+        "website": "https://companytwo.com",
+        "image": "companytwo.jpg",
+        "membershipLevel": "Silver",
+        "description": "Expert in ABC solutions."
+    },
+    {
+        "name": "Company Three",
+        "address": "789 Oak St, Sometown, USA",
+        "phone": "555-555-5555",
+        "website": "https://companythree.com",
+        "image": "companythree.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Innovative technology for modern businesses."
+    },
+    {
+        "name": "Company Four",
+        "address": "321 Maple St, Anothertown, USA",
+        "phone": "111-222-3333",
+        "website": "https://companyfour.com",
+        "image": "companyfour.jpg",
+        "membershipLevel": "Gold",
+        "description": "Committed to delivering quality products."
+    },
+    {
+        "name": "Company Five",
+        "address": "654 Pine St, Yetanothertown, USA",
+        "phone": "444-555-6666",
+        "website": "https://companyfive.com",
+        "image": "companyfive.jpg",
+        "membershipLevel": "Silver",
+        "description": "Your trusted partner in business growth."
+    },
+    {
+        "name": "Company Six",
+        "address": "987 Birch St, Differenttown, USA",
+        "phone": "777-888-9999",
+        "website": "https://companysix.com",
+        "image": "companysix.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Excellence in customer service and support."
+    },
+    {
+        "name": "Company Seven",
+        "address": "123 Cedar St, Lasttown, USA",
+        "phone": "000-111-2222",
+        "website": "https://companyseven.com",
+        "image": "companyseven.jpg",
+        "membershipLevel": "Gold",
+        "description": "Leading innovations in the industry."
+    }
+]
