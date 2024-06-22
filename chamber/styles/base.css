@@ -371,47 +371,21 @@ form button:hover {
 
 
 .menu {
+    display: flex;
+    justify-content: center;
     margin: 1rem auto;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
     background-color: #bed;
-    text-align: center;
 }
 
 .menu button {
     padding: 1rem;
     font-weight: 700;
+    margin: 0 0.5rem;
 }
 
-section {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0.5rem;
-    background-color: #eee;
-    margin: 0.5rem 0;
-}
-
-section img {
-    border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
-    height: 75px;
-    max-width: 100%;
-}
-
-section h3 {
-    font-size: 1.5rem;
-    font-family: "Caveat", cursive;
-}
-
-section p {
-    font-weight: 600;
-    font-size: smaller;
-}
-
-section a {
-    font-family: "Roboto", Arial, sans-serif;
-    font-size: 0.85rem;
-    color: navy;
-    letter-spacing: 1.1pt;
+article {
+    width: 100%;
 }
 
 article.grid {
@@ -446,7 +420,6 @@ article.list section>* {
 
 article.list section img {
     display: none;
-
 }
 
 article.list section h3 {
@@ -455,4 +428,35 @@ article.list section h3 {
 
 article.list section:nth-child(even) {
     background-color: #bed;
+}
+
+section {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+    margin: 0.5rem 0;
+}
+
+section img {
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #333;
+    height: 75px;
+    max-width: 100%;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    font-family: "Caveat", cursive;
+}
+
+section p {
+    font-weight: 600;
+    font-size: smaller;
+}
+
+section a {
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+    letter-spacing: 1.1pt;
 }
