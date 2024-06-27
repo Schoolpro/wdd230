@@ -1,17 +1,35 @@
-const apiKey = 'f6f6f9f52131734c0e78b20935024001';
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('#caption-desc');
+
+const apiKey = '4af53861742ef0628fb279558fe64705';
 const lat = 40.3649;
 const lon = -111.7382;
-const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily,alerts&appid=${apiKey}&units=metric&lang=es`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}&lang=es`;
 
-fetch(apiUrl)
-    .then(response => response.json())
-    .then(data => {
-        const temp = data.current.temp;
-        const description = data.current.weather[0].description;
-        const icon = data.current.weather[0].icon;
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data);
+            displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-        document.getElementById('temperature').innerText = `Temperatura: ${temp}°C`;
-        document.getElementById('description').innerText = `Condición: ${description}`;
-        document.getElementById('weather-icon').innerHTML = `<img src="https://openweathermap.org/img/w/${icon}.png" alt="${description} icon">`;
-    })
-    .catch(error => console.error('Error al obtener los datos del clima:', error));
+function displayResults(weatherData) {
+    currentTemp.innerHTML = `${weatherData.main.temp.toFixed(0)}°C`;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+    const desc = weatherData.weather[0].description;
+
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+    captionDesc.textContent = desc;
+}
+
+apiFetch();
