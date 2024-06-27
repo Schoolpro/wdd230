@@ -19,7 +19,6 @@
     <meta property="og:image"
         content="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,f_avif,h_389,q_65,w_601/v1/crm/utahvalley/pleasantgrove0_302e0d0d-5056-a36a-0bfae49bdd8d7736.jpg">
     <meta property="og:url" content="https://schoolpro.github.io/wdd230/">
-
 </head>
 
 <body>
@@ -54,14 +53,19 @@
         <section class="card">
             <h2>WDD 230: Web Frontend Development</h2>
             <h3>Learning Activities</h3>
-            <ul id="dynamic-links">
-
-            </ul>
+            <ul id="dynamic-links"></ul>
         </section>
         <section class="card">
             <h3>Information</h3>
-
             <p id="visit-counter">Page Visits: 0</p>
+        </section>
+        <section class="card">
+            <h3>Weather Information</h3>
+            <div id="weather-card" class="weather-card">
+                <div id="weather-icon"></div>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
         </section>
     </main>
 
@@ -74,6 +78,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 
 </html>
