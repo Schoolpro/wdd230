@@ -1,0 +1,72 @@
+@media (min-width: 992px) {
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-family: 'Arial', sans-serif;
+        color: #333;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px 0;
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header img {
+        /* nothing yet */
+    }
+
+    header h1 {
+        margin: 0;
+        padding-left: 30%;
+    }
+
+    nav,
+    main,
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .card {
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin-right: 10px;
+    }
+}

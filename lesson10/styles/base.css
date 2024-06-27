@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header,
+nav,
+main,
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px 0;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header img {
+    /* nothing yet */
+}
+
+header h1 {
+    margin: 0;
+    padding-left: 30%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #0000FF;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+nav a:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+main,
+footer {
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1);
+    height: 300px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #4D5B97);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Great Vibes", serif;
+}
+
+header picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+header h1 {
+    text-align: center;
+    width: 100%;
+
+}
+
+/* Estilos para el contenedor de enlaces */
+#dynamic-links {
+    padding: 0;
+    list-style: none;
+}
+
+#dynamic-links li {
+    margin-bottom: 10px;
+}
+
+#dynamic-links h2 {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#dynamic-links ul {
+    display: inline;
+    padding: 0;
+    list-style: none;
+}
+
+#dynamic-links ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#dynamic-links a {
+    color: blue;
+    text-decoration: none;
+}
+
+#dynamic-links a:hover {
+    text-decoration: underline;
+}
