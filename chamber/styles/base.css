@@ -463,3 +463,34 @@ section a {
     color: navy;
     letter-spacing: 1.1pt;
 }
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.banner p {
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+}

@@ -38,6 +38,11 @@
         </ul>
     </nav>
     <main>
+        <div id="banner" class="banner">
+            <button id="close-banner">❌</button>
+            <p>Join us for a Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</p>
+
+        </div>
         <div class="container">
             <div class="card current-events">
                 <h2>Current Events</h2>
@@ -53,9 +58,11 @@
             </div>
             <div class="card">
                 <h2>Weather</h2>
-                <p>Temperature: <span id="temperature">45</span>°F</p>
-                <p>Wind Speed: <span id="windspeed">10</span> mph</p>
-                <p>Wind Chill: <span id="windchill">N/A</span></p>
+                <p>Temperature: <span id="temperature"></span>°C</p>
+                <p>Description: <span id="description"></span></p>
+                <div id="weather-icon"><img id="weather-image" src="" alt=""></div>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast"></div>
             </div>
         </div>
     </main>
@@ -74,6 +81,8 @@
     <script src="scripts/mainmenu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>
