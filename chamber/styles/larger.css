@@ -1,4 +1,11 @@
 @media screen and (min-width: 640px) {
+    .content-wrapper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
     header {
         padding: 20px;
     }

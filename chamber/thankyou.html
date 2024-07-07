@@ -20,40 +20,48 @@
 
 <body>
     <div id="mode">💡/🕶️</div>
-    <header>
-        <h1>PG Chamber of Commerce Website</h1>
-    </header>
+    <div class="content-wrapper">
+        <header>
+            <h1>PG Chamber of Commerce Website</h1>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        <button id="menu" aria-label="Menu"></button>
 
-    <button id="menu" aria-label="Menu"></button>
-    <nav class="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#"> Discover</a></li>
-            <li><a href="#"> Directory</a></li>
-            <li><a href="#"> Join</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="main-container">
-            <section class="thankyou-message">
-                <h2>Thank You!</h2>
-                <p>Thank you for submitting your application to join the Chamber of Commerce. We will review your
-                    application and get back to you shortly.</p>
-                <p>If you have any questions, feel free to <a href="#">contact us</a>.</p>
-                <p><a href="index.html">Return to Home Page</a></p>
-            </section>
+        <div class="hero">
+            <img src="images/wdd230-org-large.webp" alt="PG Night View"
+                srcset="images/wdd230-org-small.webp 480w, images/wdd230-org-medium.webp 800w, images/wdd230-org-large.webp 1200w"
+                sizes="(max-width: 480px) 100vw, (max-width: 800px) 100vw, 1200px">
+
         </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <p>Contact Info</p>
-            <p>Alan Krebs | WDD 230 - BYUI</p>
-            <p>©
-                <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
-            </p>
-            <p id="lastModified"></p>
-        </div>
-    </footer>
+        <main>
+            <div class="main-container">
+                <section class="thankyou-message">
+                    <h2>Thank You!</h2>
+                    <p>Thank you for submitting your application to join the Chamber of Commerce. We will review your
+                        application and get back to you shortly.</p>
+                    <p>If you have any questions, feel free to <a href="#">contact us</a>.</p>
+                    <p><a href="index.html">Return to Home Page</a></p>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Contact Info</p>
+                <p>Alan Krebs | WDD 230 - BYUI</p>
+                <p>©
+                    <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+    </div>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/mainmenu.js"></script>
     <script src="scripts/darkmode.js"></script>
