@@ -499,3 +499,24 @@ article.grid section a:hover,
 article.list section a:hover {
     text-decoration: underline;
 }
+
+article.list {
+    display: block;
+    width: 100%;
+}
+
+.directory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.directory-table th,
+.directory-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.directory-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
