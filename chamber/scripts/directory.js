@@ -1,24 +1,20 @@
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("#directory-article");
 
 gridButton.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
 });
 
-listButton.addEventListener("click", showList);
-
-function showList() {
+listButton.addEventListener("click", () => {
     display.classList.add("list");
     display.classList.remove("grid");
-}
-
+});
 
 fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
-        const article = document.querySelector('article');
         data.forEach(member => {
             const section = document.createElement('section');
             section.innerHTML = `
@@ -30,6 +26,6 @@ fetch('data/members.json')
                 <p>${member.membershipLevel}</p>
                 <p>${member.description}</p>
             `;
-            article.appendChild(section);
+            display.appendChild(section);
         });
     });
