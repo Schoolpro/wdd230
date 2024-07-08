@@ -453,9 +453,7 @@ article.grid {
     gap: 20px;
 }
 
-article.list {
-    display: block;
-}
+
 
 article.grid section,
 article.list section {
@@ -500,10 +498,32 @@ article.list section a:hover {
     text-decoration: underline;
 }
 
+
 article.list {
     display: block;
     width: 100%;
 }
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
+
+.list section img {
+    display: none;
+}
+
+.list section h3 {
+    font-size: 1rem;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+    background-color: #bed;
+}
+
 
 .directory-table {
     width: 100%;
