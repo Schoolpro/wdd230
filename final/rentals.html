@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozumel Scooters Rentals</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div id="mode">💡/🕶️</div>
+    <div class="content-wrapper">
+        <header>
+            <div class="hero">
+                <div class="hero-title">
+                    <h1>Cozumel Scooters</h1>
+                </div>
+                <img src="images/cozumel.jpg" alt="Cozumel Scooter friends"
+                    srcset="images/cozumel-small.jpg 480w, images/cozumel-medium.jpg 800w, images/cozumel-large.jpg 1200w"
+                    sizes="(max-width: 480px) 100vw, (max-width: 800px) 100vw, 1200px">
+                <a href="reservations.html" class="herolabel">
+                    <p>Make a Reservation!</p>
+                </a>
+            </div>
+
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu" aria-label="Menu">☰</button>
+
+
+        <main>
+            <div class="container-white">
+                <h2>Our Rentals</h2>
+                <table id="rental-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Max Persons</th>
+                            <th>Half Day (Reservation)</th>
+                            <th>Full Day (Reservation)</th>
+                            <th>Half Day (Walk-In)</th>
+                            <th>Full Day (Walk-In)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Contact Info | Alan Krebs | WDD 230 - BYUI</p>
+                <p>Follow us on
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <img src="images/facebook-logo.webp" alt="Facebook" class="social-icon" width="24" height="24">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <img src="images/instagram-logo.webp" alt="Instagram" class="social-icon" width="24"
+                            height="24">
+                    </a>
+                </p>
+                <p>©
+                    <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/rentals.js"></script>
+</body>
+
+</html>

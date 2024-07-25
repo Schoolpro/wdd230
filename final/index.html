@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozumel Scooters | Cozumel Scooter Rentals</title>
+    <meta property="og:title" content="Cozumel Scooters | Fun Scooter Rentals in Cozumel">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/scoots-logo.png">
+    <meta property="og:url" content="https://example.com/scoots">
+    <meta name="author" content="Alan Krebs">
+    <meta name="description"
+        content="Cozumel Scooters offers motor scooter, ATV, and Jeep rentals on Cozumel Island. Rent a scooter today and explore the beautiful coasts and inlets!">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <div id="mode">💡/🕶️</div>
+    <div class="content-wrapper">
+        <header>
+            <div class="hero">
+                <div class="hero-title">
+                    <h1>Cozumel Scooters</h1>
+                </div>
+                <img src="images/cozumel.jpg" alt="Cozumel Scooter friends"
+                    srcset="images/cozumel-small.jpg 480w, images/cozumel-medium.jpg 800w, images/cozumel-large.jpg 1200w"
+                    sizes="(max-width: 480px) 100vw, (max-width: 800px) 100vw, 1200px">
+                <a href="reservations.html" class="herolabel">
+                    <p>Make a Reservation!</p>
+                </a>
+            </div>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="menu" aria-label="Menu">☰</button>
+
+        <main>
+            <div id="banner" class="banner">
+                <button id="close-banner">❌</button>
+                <p>Today's high temperature: <span id="temp-max"></span>°C</p>
+            </div>
+            <div class="container">
+                <div class="card current-events">
+                    <h2>Current Events</h2>
+                    <img src="images/events.webp" alt="Current Events" style="width: 100%; height: auto;">
+                    <p>Stay up-to-date with the latest events happening in our community. From local festivals to
+                        scooter tours, there's always something exciting going on.</p>
+                </div>
+
+                <div class="card">
+                    <h2>About Us</h2>
+                    <img src="images/about-us.webp" alt="About Us" style="width: 100%; height: auto;">
+                    <p>Cozumel Scooters is your go-to motor scooter rental company on Cozumel Island. We provide
+                        friendly and easy rental services for motor scooters, ATVs, and Jeeps. Explore the island with
+                        us!</p>
+                </div>
+
+                <div class="card">
+                    <h2>Rental Options</h2>
+                    <img src="images/rentals.webp" alt="Rental Options" style="width: 100%; height: auto;">
+                    <p>Discover our range of rental options including scooters, ATVs, and Jeeps. Perfect for exploring
+                        Cozumel at your own pace.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Weather</h2>
+                    <p>Temperature: <span id="temperature"></span>°C</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Next Day Forecast: <span id="forecast-temp"></span>°C at 3:00pm</p>
+                    <p>Description: <span id="description"></span></p>
+                    <div id="weather-icon"><img id="weather-image" src="" alt="Weather Icon"></div>
+                    <div id="forecast"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Contact Info | Alan Krebs | WDD 230 - BYUI</p>
+                <p>Follow us on
+                    <a href="https://www.facebook.com" target="_blank" class="social-link">
+                        <img src="images/facebook-logo.webp" alt="Facebook" class="social-icon" width="24" height="24">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" class="social-link">
+                        <img src="images/instagram-logo.webp" alt="Instagram" class="social-icon" width="24"
+                            height="24">
+                    </a>
+                </p>
+                <p>©
+                    <script>document.write(new Date().getFullYear());</script> Alan Krebs, Utah, USA
+                </p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+
+
+    </div>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/mainmenu.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+</body>
+
+</html>
